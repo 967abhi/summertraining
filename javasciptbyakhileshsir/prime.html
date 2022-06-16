@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<body>
+<script>
+var num, i, cs=0;
+num=prompt(" enter the number ");
+for(i=2; i<num; i++)
+{
+  if(num%2==0)
+  {
+    cs++;
+    break;
+  }
+}
+if(cs==0)
+  document.write(num + " is a Prime Number");
+else
+  document.write(num + " is not a Prime Number");
+</script>
+</body>
+</html> 

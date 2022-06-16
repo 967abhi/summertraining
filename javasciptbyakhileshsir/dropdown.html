@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+   function f1(){
+                var x=document.getElementById("s1").value;
+                if(x==" "){
+                  alert("select any image ")
+
+                }
+                else{
+                  document.getElementById("m1").src=x;
+
+                }
+              
+                
+            }
+  </script>
+</head>
+<body>
+     <h1>Select image  dropdown list </h1>
+     <hr>
+     <select name="" id="s1" onchange="f1()">
+       <option value="none"> Select any image </option>
+       <option value="about.jpg">Pic1</option>
+       <option value="row1.jpg">Pic2</option>
+       <option value="row2.jpg">Pic3</option>
+     </select>
+     <br>
+     <br>
+     <img  id="m1"  src="about.jpg" alt="" style="height:400px; width: 100%; border: 2px solid red ;">
+
+</body>
+</html>

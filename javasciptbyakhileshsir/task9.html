@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            // inventory method me use hota haiii  rdlc report 
+           function f1(){  
+           var x=document.getElementById("t1").value.trim();
+           if(x.indexOf(' ')!=-1){
+           var Fname= x[0].toUpperCase()+".";
+
+           var LIndex= x.lastIndexOf(' ');
+           
+                 for(var i=0; i<LIndex; i++){
+                    if(x[i]==' '){
+                        Fname=Fname+x[i+1].toUpperCase()+".";
+                    }
+                 }
+                 var ll=x[LIndex+1].toUpperCase();
+                 var Lname=x.substring(x.lastIndexOf(' ')+2);
+                 Fname=Fname+ll+Lname.toLowerCase();
+                 document.getElementById("d1").innerText="short string "+Fname;
+                }
+                else{
+                    document.getElementById("d1").innerText="short string "+x;
+                }
+           
+           
+        }
+       </script>
+    </head>
+    <body>
+        Enter any string :- 
+        <br>
+        <input type="text" name="" id="t1">
+        <button onclick="f1()">Submit </button>
+        <br>
+        <br>
+
+        <div id="d1">
+    </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                background:green;
+                float: right;
+                margin-top:180px;
+                padding:10px 15px;
+                color:white;
+            }
+            #popup{
+                 width:100%;
+                 height: 100%;
+                 position:absolute;
+                 top:0;
+                 display:none;
+                 align-items:center;
+                 
+            }
+            .popup-content{
+                height:300px;
+                width:200px;
+                background:whitesmoke;
+                padding:20px;
+                position:relative;
+                float:right;
+
+                margin-top:210px;
+                margin-right:13px;
+                /* border:2px solid black;  */
+            }
+            input{
+                display:block;
+                padding:8px;
+                border:1px solid red;
+            }
+            button{
+                position: relative;
+                bottom: 135px;
+            }
+        </style>
+        <script>
+            function f1(){
+                document.getElementById("popup").style.display = "block";
+                document.getElementById("d1").style.background = "red";
+            }
+            function f2()
+            {
+                document.getElementById("popup").style.display = "none";
+                document.getElementById("d1").style.background = "green";  
+            }
+        </script>
+    </head>
+    <body>
+        <div style="border:3px solid red;min-height:100vh;width:100%">
+        <button id="d1" onclick="f1()"><h3>E<br>N<br>Q<br>U<br>I<br>R<br>Y</h3></button>
+        </div>
+        <div id="popup">
+           <div class="popup-content">
+               
+               <!-- <h2 style="color:red"> Enquiry Form</h2>
+               Name<br> -->
+               <input type="text"/><br>
+               Email<br>
+               <input type="email"/><br>
+               Query<br>
+               <input type="text"/><br>
+               <button onclick="f2()" style="border:1px solid red;padding:8px; position: relative; top: 25px;">Submit</button>
+           </div>
+        </div>
+
+        
+    </body>
+</html>

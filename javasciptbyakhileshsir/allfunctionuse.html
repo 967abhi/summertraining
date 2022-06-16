@@ -1,0 +1,59 @@
+<html>
+    <head>
+   <script>
+    //    no return type and no passing parameter
+    function f1(){
+        var n=document.getElementById("t1").value;
+        n=parseInt(n);
+        if(n>0){
+            alert(n+"positive number ");
+        }
+        else{
+            alert(n+"Negative Number ");
+
+        }
+    }
+
+    //No return type but passing parameter 
+    function f2(a){
+        var x=parseInt(a.value);
+        if(x>0){
+            alert(x+"positive ");
+        }
+        else{
+            alert(x+"Negative ")
+        }
+
+    }
+
+    //return type but no passing parameter 
+    function f3(){
+        var n=parseInt(document.getElementById("t1").value);
+        if(n>0){
+            return n+"positive number ";
+        }
+        else{
+            return n+"negative number ";
+        }
+    }
+    //Return type and passing parameter 
+    function f4(x){
+        var n=parseInt(x.value);
+        return(n>0)?"postive number ":"negative number ";
+
+
+    }
+
+   </script>
+    </head>
+    <body>
+        <h3>Enter any number to check number is positve or negative </h3>
+        <hr>
+        Enter number
+        <!-- <input type="number" onblur="alert(f3())" name="" id="t1"> -->
+        <input type="number" onblur="alert(f4(this))  " name="" id="t1">
+        <!-- <input type="number" onblur="f1()" name="" id="t1"> -->
+        <!-- <input type="number" onblur="f2(this)" name="" id="t1"> -->
+    
+    </body>
+</html>

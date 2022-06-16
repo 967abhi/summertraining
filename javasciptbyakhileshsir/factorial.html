@@ -1,0 +1,49 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        function factorial(n){
+    let answer = 1;
+    if (n == 0 || n == 1){
+      return answer;
+    }else{
+      for(var i = n; i >= 1; i--){
+        answer = answer * i;
+      }
+      return answer;
+    }  }
+let n = prompt(" enter the number ");
+  answer = factorial(n)
+  document.write("The factorial of " + n + " is " + answer);
+    </script>
+    </body> -->
+
+
+<script>
+    var n , i ,fact=1;
+    n= parseInt( prompt(" enter the value"));
+    for(i=n; i>0 ; i--){
+        fact = fact*i;
+        if(i!=1){
+            document.write(i+" * ");
+
+        }
+        else{
+             document.write(i+"  = ");
+        }
+        
+    }
+    document.write(fact);
+</script>
+
+
+
+ 
+
+

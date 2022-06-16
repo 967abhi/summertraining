@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <script>
+        function f2(){
+           var name;
+           var name2;
+           var name3;
+           name=document.getElementById("t1").value;
+           name2=document.getElementById("t2").value;
+           name3=parseInt(name)+parseInt(name2);
+        //    alert(" your number " + name3);
+           document.getElementById("t3").value=name3;
+        }
+    </script>
+    </head>
+    <body>
+        <h1> <center>Addition of Two Numbers </center> </h1>
+        <hr>
+       Enter first number 
+       <br>
+       <input type="number" name="" id="t1">
+       <!-- <button>Click Me </button> -->
+       <br>
+       Enter second Number 
+       <br>
+       <input type="number" name="" id="t2">
+       <br>
+       Result 
+       <br>
+       <input readonly="true" type="text" name="" id="t3">
+       <br>
+       <br>
+       <button onclick="f2()">Click Me</button>
+
+    </body>
+</html>

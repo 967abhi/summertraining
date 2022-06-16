@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            var aa=["about.jpg","bg.jpg","row1.jpg","row2.jpg"];
+            var i=0; 
+            function slider(){
+
+                document.getElementById("m1").src=aa[i];
+                i++;
+                if(i==aa.length){
+                    i=0;
+                }
+                window.setTimeout(slider,1500);
+            }
+            window.onload=slider;
+
+        </script>
+    </head>
+    <body>
+        
+        <h1>Move Slider Automatic By using javascript </h1>
+        <img src="about.jpg" id="m1" height="200px" width="100%" style="border: 3px solid blue;" alt="">
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script>
+      var arr=["Swami1.jpg","row1.jpg","row2.jpg"];
+      var i=0;
+      function next(){
+   document.getElementById("m1").src=arr[i];
+   i++;
+   if(i==arr.length)
+   {
+     i=i-1;
+     alert(" no images available ");
+     //alert ki  priority  jade hoti hai isliye pehle ye print krta haii 
+
+   }
+
+      }
+      function prev(){
+        i--;
+        document.getElementById("m1").src=arr[i];
+        if(i<0){
+          i=0;
+          alert("no imge available ");
+          document.getElementById("m1").src=arr[i];+
+        }
+        
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <h6>Click on next button to display next pics and click previous to display previous oics</h6>
+    <hr>
+    <img src="about.jpg"   id="m1" alt="" style="height: 200px; width:100%; border:2px solid red;">
+    <img src="next.png" onclick=" next()" height="100px" style="position: absolute; top:45%; left:85%; right:1%; cursor: pointer;" title="click here to next image " alt="">
+    <img src="prev.png" onclick="prev()"  title="click here to display previous image" style= "  position: absolute;  top: 45%;   right: 85%;  height: 100px; cursor: pointer;"  alt="">
+  </body>
+</html>

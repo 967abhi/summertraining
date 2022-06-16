@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            // var h=100;
+            // var w=100;
+
+            function f1(){
+                var a=document.getElementById("t1").value;
+                // h=h+parseInt(a);
+                // w=w+parseInt(a);
+                document.getElementById("m1").style.height=parseInt(a)+"%";
+                document.getElementById("m1").style.width=parseInt(a)+"%";
+                
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Scroll Range </h1>
+         <hr>
+         <input type="range" name=""  value="0" onchange="f1()" id="t1">
+         <br>
+         <br>
+         <img src="about.jpg" id="m1" alt="" style="border: 2px solid red ; height: 120px; width: 25%;">
+    </body>
+</html>

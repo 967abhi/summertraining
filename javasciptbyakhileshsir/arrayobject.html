@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            var arrobj=[{ name:"abhishek",  srno:100 ,pname:"computer",price:4500,pic:"about.jpg"},{
+                name:"abhishek1",  srno:101 ,pname:"keyboard",price:450,pic:"row1.jpg"
+            },{
+                name:"abhishek2",  srno:102 ,pname:"mouse",price:450,pic:"row2.jpg"
+            }];
+            // alert(arrobj[0].pname)
+            function f1(){
+                var tt="<table border='1' width='100%'><tr><th>name</th><th>srnp</th><th>pname</th><th>Price</th><th>productpicture</th></tr>";
+                    for(var i=0; i<arrobj.length; i++){
+                      tt=tt+"<tr><td>"+arrobj[i].name+"</td><td>"+arrobj[i].srno+"</td><td>"+arrobj[i].pname+"</td><td>"+arrobj.price+"</td><td><img src="+arrobj[i].pic+"height= '100' width='100' /></td></tr> ";
+
+                     
+                    }
+              tt=tt+"</table>";
+              document.getElementById("id").innerHTML=tt;
+              
+            
+            
+                }
+
+        
+
+        </script>
+    </head>
+    <body onload="f1()">
+        <div id="id">
+
+        </div>
+    </body>
+</html>

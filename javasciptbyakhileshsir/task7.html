@@ -1,0 +1,22 @@
+<!-- sparkout  -->
+<html>
+    <head>
+        <script>
+            function f1(){
+                document.getElementById("sp1").innerText="Typing";
+                document.getElementById("sp1").style.color="red";
+            }
+            function f2(){
+                document.getElementById("sp1").innerText=" ";
+                  
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Type any text on the textbox</h2>
+        <hr>
+        <span style="font-size:  20px ; " id="sp1"> Type</span>
+        <br>
+        <input id="t1" onkeyup="f1()"   onblur="f2()"  type="text" style="height:45px ; width:80%; border:2px solid blue; " placeholder="Type Here .... ">
+    </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Track </title>
+    <style>
+        *{
+            margin: 10;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       #div1{
+           position: relative;
+           display: inline-block;
+           left: 170px;
+           /* top: 200px; */
+           height: 400px;
+           width: 180px;
+           border: 2px solid blue;
+       }
+       .hr{
+           position: relative;
+           top: 0px;
+           background-color: blue;
+       }
+       h2{
+           color: red;
+       }
+       #stop{
+           display: inline-block;
+           position: relative;
+           left: 100px;
+           bottom: 20px;
+        }
+        #start{
+            position: relative;
+            bottom: 20px;
+        }
+        #div2{
+          position: relative;
+             display: inline-block;
+             left: -35px;
+  
+             top: 50px;
+             border-radius: 30%;
+             height: 150px;
+             width: 100px;
+             bottom: 150px;
+             border: 2px solid blue;
+  
+          }
+          #div3{
+            position: relative;
+             display: inline-block;
+             left:  5px;
+  
+             top: 20px;
+             border-radius: 60%;
+             height: 100px;
+             width: 70px;
+             bottom: 10px;
+             border: 2px solid blue;
+
+          }
+          #div4{
+            position: relative;
+             display: inline-block;
+             left:  7px;
+  
+             top: 20px;
+             border-radius: 90%;
+             height: 50px;
+             width: 50px;
+             bottom: 10px;
+             border: 2px solid blue;
+
+
+          }
+       .hrl{
+           position: relative;
+           top: 100px;
+       }
+       h5{
+           position: relative;
+           top: 110px;
+           color: purple;
+       }
+       </style>
+        <script>
+          
+            var audio = new Audio('audio_file.mp3')
+            function playAudio(){
+                f1();
+                audio.play();
+
+              
+               
+               
+            }
+            function pauseAudio(){
+                // f1();
+                audio.pause();
+               window.location.href="sound.html";
+              
+                
+            }
+            function f1(){
+                 
+                var x="0123456789ABCEDF";
+                var color="#";
+                for(var i=0; i<6; i++){
+                    color=color+x[Math.floor(Math.random()*16)];
+                }
+                // alert(color);
+                document.getElementById("div3").style.background=color;
+                window.setTimeout(f1,1000);
+               
+               
+            }
+          
+            
+        </script>
+</head>
+<body >
+    
+    <div id="div1"    >
+        <h2>  <center> DJ SOUND</center> </h2>
+        <hr class="hr">
+        <button id="start" onclick="playAudio()">Start</button>
+        <button id="stop" onclick="pauseAudio()">Stop</button>
+       
+        <div id="div2"  >
+             <div id="div3">
+                 <div id="div4" >
+
+                 </div>
+
+             </div>
+        </div>
+           
+
+
+
+
+        <hr class="hrl">
+        <h5> <center>Developed by :- Abhishek</center></h5>
+    </div>
+
+</body>
+</html>

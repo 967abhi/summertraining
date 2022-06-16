@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+          .outer{
+                 height: 400px;
+                 width: 100%;
+
+          }
+          .div1{
+              height: 100px;
+              width: 50%;
+              float: left;
+          }
+          .div2{
+              height: 200px;
+              width: 50%;
+              float: right;
+          }
+        </style>
+        <script>
+             var aa=["apj1.jpg","APJ2.jpg","Swami1.jpg","swami2.jpg"];
+             var aa1=["apjthought1.jpg","apjthought2.jpg","swamithought1.jpg","swamithought2.jpg"];
+            var i=0; 
+            function slider(){
+
+                document.getElementById("m1").src=aa[i];
+                document.getElementById("m2").src=aa1[i];
+                i++;
+                if(i==aa.length){   
+                    i=0;
+                }
+                window.setTimeout(slider,1500);
+            }
+            window.onload=slider;
+            // function 
+
+            // function slider1(){
+            //     document.getElementById("m2").src=aa1[i];
+            //     i++;
+            //     if(i==aa1.length){
+            //         i=0;
+
+            //     }
+            //     window.setTimeout(slider1,1500);
+            // }
+            // window.onload=slider1;
+        </script>
+    </head>
+    <body>
+
+        <div class="outer" >
+            <div class="div1">
+                <img src="about.jpg" id="m1" height="100px" width="50%" style="border: 3px solid blue;" alt="">
+
+            </div>
+            <div class="div2" id="d2">
+                <img src="about.jpg" id="m2" height="100px" width="50%" style="border: 3px solid blue;" alt="">
+
+            </div>
+        </div>
+        
+    </body>
+</html>

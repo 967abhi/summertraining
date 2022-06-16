@@ -1,0 +1,40 @@
+ <!-- isme humlog ko print karana tha textarea me isliye ye kiye haiii  -->
+
+<html>
+    <head>
+        <script>
+            function f1(){
+                var t;
+              t=document.getElementById("t2").value;
+
+             var i;
+             var y=0;
+             for(i=1; i<=10 ; i++){
+                //   y = document.write(t+"X" + i + "= " +i*t + "<br>");
+                //  i++;
+                    y= y+ t*i+"\n";
+                    // alert(y); 
+                    
+                    document.getElementById("t3").value= y;
+                }
+        
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Multiplication </h1>
+        <hr>
+        Enter any Number 
+        <br>
+       <input type="number" name="" id="t2">
+       <br>
+       <br>
+       <button onclick="f1()">Result</button>
+       <br>
+       <br>
+       <br>
+       <textarea name="" id="t3" cols="30" rows="20" style="resize: none;"></textarea>
+    </body>
+</html>

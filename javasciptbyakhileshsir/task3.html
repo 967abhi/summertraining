@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function f1(x){
+                var bpic=document.getElementById("m1").src;
+                document.getElementById("m1").src=x.src;
+                x.src=bpic;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>My Image Gallery By using Javascript</h1>
+        <hr>
+        <div id="main">
+        <div id="d1">
+            <img src="about.jpg" id="m1" height="300px" width="100%" alt="">
+
+        </div>
+        <div id="d2">
+            <img src="row1.jpg" onclick="f1(this)"    style="width: 20%; height:200px; margin:1%;border: 2px solid red ;" alt="">
+            <img src="row2.jpg"  onclick="f1(this)"   style="width: 20%; height:200px; margin:1%;border: 2px solid red ;" alt="">
+            <img src="swami2.jpg" onclick="f1(this)"   style="width: 20%; height:200px; margin:1%;border: 2px solid red ;" alt="">
+            <img src="apj1.jpg"  onclick="f1(this)"   style="width: 20%; height:200px; margin:1%;border: 2px solid red ;" alt="">
+           
+        </div>
+        </div>
+    </body>
+</html>

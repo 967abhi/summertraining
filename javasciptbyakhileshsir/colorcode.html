@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                var x="0123456789ABCEDF";
+                var color="#";
+                for(var i=0; i<6; i++){
+                    color=color+x[Math.floor(Math.random()*16)];
+                }
+                // alert(color);
+                document.getElementById("b1").style.background=color;
+                window.setTimeout(f1,10000);
+            }
+        </script>
+    </head>
+    <body onload="f1()" id="b1">
+        
+    </body>
+</html>
